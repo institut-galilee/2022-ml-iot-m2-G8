@@ -29,11 +29,9 @@ def face_recognitions(etats, connex_mode):
             file_path = f"{path}/{file}"
             img_file_recog = face_recognition.load_image_file(file_path)
             known_face_encodings.append(face_recognition.face_encodings(img_file_recog)[0])
-    known_face_names = [
-        "Mehdi",
-        "Mohammed",
-    ]
-
+    # Add your names inside [] for exemple
+    # ["Mehdi", "Mohammed"]
+    known_face_names = []
     # Initialize some variables
     face_locations = []
     face_names = []
